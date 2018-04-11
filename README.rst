@@ -27,6 +27,20 @@ you want to do this from a *virtual environment*.
    $ pip install -r requirements.txt
 
 
+**Avoid accidental account data publishing**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+if you forked this repo you should run the command:
+
+.. code-block:: bash
+
+   $ git update-index --assume-unchanged account.txt token.txt
+
+
+
+before updating account.txt and token.txt to avoid publishing your account
+info to github
+
 
 Token
 ~~~~~
